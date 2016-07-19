@@ -23,8 +23,9 @@ $('#js-shopping-list-form').submit(function(event){
 
 
 //check button *make sure check button toggles
-
-
+$( ".shopping-list" ).on( "click", '.shopping-item-controls', function() {
+    $(this).siblings('.shopping-item').toggleClass('shopping-item__checked');
+});
 
 
 
