@@ -22,21 +22,20 @@ $('#js-shopping-list-form').submit(function(event){
 
 
 
-//check button *make sure check button toggles
+/*check button *make sure check button toggles
+on method is what makes this code work on new items added to DOM */
 $( ".shopping-list" ).on( "click", '.shopping-item-controls', function() {
     $(this).siblings('.shopping-item').toggleClass('shopping-item__checked');
 });
 
 
-
-
-
 //delete button 
 
+$( ".shopping-list" ).on( "click", '.shopping-item-controls', function() {
+    $(this).parent('li').remove();
 
 
-
-
+});
 
 
 
